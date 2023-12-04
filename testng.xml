@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.pan.listeners.ListenerClass" />
+        <listener class-name="com.pan.listeners.MethodInterceptor" />
+        <listener class-name="com.pan.listeners.AnnotationTransformer" />
+    </listeners>>
+    <test verbose="2" name="AutoTestDemo">
+        <classes>
+            <class name="com.pan.tests.api.ApiTest"/>
+            <class name="com.pan.tests.web.LoginTest"/>
+            <class name="com.pan.tests.web.NavigateTest"/>
+            <class name="com.pan.tests.web.SearchTest"/>
+        </classes>
+    </test>
+</suite>
