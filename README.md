@@ -33,14 +33,14 @@ To maintain high standards of code quality and ensure adherence to best practice
 ## Configuration
 -For Web UI Testing - Locate and update the `config.properties` file with the required browser, application URL, required report generation details, retrying failed test cases in the src/test/resources/config.properties.
 -For API Testing - Locate and update the `api-config.properties` file with the base URL and necessary endpoints in the src/test/resources/api-config.properties.
-- Update the testmanager excel in the src/test/resources/testmanager.xlsx with the test data and test case details. Please make sure to have the test method name mentioned in both TestCaseManager and TestData sheets.
+- Update the ‘testmanager’ excel in the src/test/resources/testmanager.xlsx with the test data and test case details. Please make sure to have the test method name mentioned in both TestCaseManager and TestData sheets.
 
 ## Writing Tests
 - Write your Selenium and Rest Assured tests using Java in the `src/test/java` directory.
 - Define your test cases and associate them with the data in Excel files.
 
 ## Running Tests
-- Open Bash and navigate to the downloaded project directory. To trigger the tests, run the command ‘bash run_tests.sh’. This Bash script is available in the project root directory. The script checks for the Java and Maven installation in order to run the tests.
+- Open Bash and navigate to the downloaded project directory. To trigger the tests, run the command ‘bash run_tests.sh’. The Bash script ‘run_tests.sh’ is available in the project root directory. The script checks for the Java and Maven installation in order to run the tests.
 - Alternatively, use the following Maven command to execute the tests from cmd window navigating to project root folder:
 mvn clean test
 - Choose the tests in the ‘TestManager’ excel and TestNG will automatically pick up tests based on the `testng.xml` configuration.
@@ -81,15 +81,14 @@ src/test/java/resources
 
 ## Web UI Test Scenarios Covered
 
-Web Application under test: Naveen Automation Labs OpenCart
+Web Application under test: [Naveen Automation Labs Open Cart App]( Your Store (naveenautomationlabs.com))
 1. Login and landing on the home page.
 2. Navigate to Desktop -> Mac page from the home page.
 3. Search for iMac in the home page search bar.
 
 ## API Test Scenarios Covered
 
-API under test: ReqRes
+REST API under test: [ReqRes]( Reqres - A hosted REST-API ready to respond to your AJAX requests)
 1. Search for a specific user via get users API call by passing ID.
 2. Create a new user via post API call.
 3. Login via post API call using email and password.
-
