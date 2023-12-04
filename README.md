@@ -81,14 +81,14 @@ src/test/java/resources
 
 ## Web UI Test Scenarios Covered
 
-Web Application under test: [Naveen Automation Labs Open Cart App]( Your Store (naveenautomationlabs.com))
+Web Application under test: [Naveen Automation Labs Open Cart App](https://naveenautomationlabs.com/opencart/)
 1. Login and landing on the home page.
 2. Navigate to Desktop -> Mac page from the home page.
 3. Search for iMac in the home page search bar.
 
 ## API Test Scenarios Covered
 
-REST API under test: [ReqRes]( Reqres - A hosted REST-API ready to respond to your AJAX requests)
+REST API under test: [ReqRes](https://reqres.in/)
 1. Search for a specific user via get users API call by passing ID.
 2. Create a new user via post API call.
 3. Login via post API call using email and password.
